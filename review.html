@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Customer Review</title>
+    <style>
+        body {
+            background-color: cornsilk;
+        }
+		#reviews {
+  margin-top: 50px;
+}
+
+#review-form {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#review-list {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#review-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#review-list li {
+  margin-bottom: 10px;
+}
+
+#review-list .review-rating {
+  color: orange;
+}
+	</style>
+</head>
+<body>
+
+    <div id="reviews">
+		<h2>Customer Reviews</h2>
+		<div id="review-form">
+		  <h3>Add a Review</h3>
+		  <form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br><br>
+			<label for="rating">Rating:</label>
+			<select id="rating" name="rating">
+			  <option value="5">5 stars</option>
+			  <option value="4">4 stars</option>
+			  <option value="3">3 stars</option>
+			  <option value="2">2 stars</option>
+			  <option value="1">1 star</option>
+			</select><br><br>
+			<label for="comment">Comment:</label>
+			<textarea id="comment" name="comment"></textarea><br><br>
+			<input type="submit" value="Submit">
+		  </form>
+		</div>
+		<div id="review-list">
+		  <h3>Reviews:</h3>
+		  <ul>
+			<!-- Reviews will be dynamically added here -->
+		  </ul>
+		</div>
+	  </div>
+
+      <a href="nonveg.html">back</a>
+    
+</body>
+</html>
